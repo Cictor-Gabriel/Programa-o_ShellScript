@@ -9,8 +9,8 @@ contador=0
 # Loop para criar as pastas
 while [ $contador -lt $num_pastas ]
 do
-    # Gerar um nome aleatório do dicionário Aurélio (substitua com sua própria lógica)
-    nome=$(shuf -n 1 aurelio.txt)  # Supondo que aurelio_dict.txt contém uma lista de palavras do dicionário
+    # Gerar um nome aleatório do dicionário Aurélio
+    nome=$(shuf -n 1 aurelio.txt)
 
     # Criar a pasta com o nome aleatório e atribuir permissão de leitura
     mkdir "$nome"
